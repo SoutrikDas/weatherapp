@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #d5d4d4;
+}
+
+.App {
+  max-width: 80vw;
+  margin: 1.25rem auto;
+}
+.customcontainer {
+  display: grid;
+  gap: 2rem; /* Space between grid items */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(250px, 1fr)
+  ); /* Responsive column width */
+  justify-items: center; /* Center items within each grid cell */
+  align-items: center;
+}
+
+.weathercard {
+  /* text-overflow: ellipsis; */
+  min-width: 19rem;
+}
